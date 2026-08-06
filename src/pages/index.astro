@@ -1,111 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Barnaby Nerberka</title>
+
 <style>
+
 :root {
-  --font-serif: "Times New Roman", Times, serif;
-  --text: #111;
-  --background: #fff;
-  --width: 760px;
+    --font-serif: "Times New Roman", Times, serif;
+    --text: #111;
+    --background: #fff;
+    --muted: #555;
+    --border: #ddd;
+    --width: 760px;
 }
+
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+
 body {
-  margin: 0;
-  background: var(--background);
-  color: var(--text);
-  font-family: var(--font-serif);
-  font-size: 20px;
-  line-height: 1;
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: var(--font-serif);
+    font-size: 20px;
+    line-height: 1.35;
 }
+
+
 .container {
-  width: min(calc(100% - 40px), var(--width));
-  margin: auto;
+    width: min(calc(100% - 40px), var(--width));
+    margin: 0 auto;
 }
+
+
+/* Header */
+
 header {
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border);
 }
+
 
 .logo {
-  font-size: 28px;
-}
-
-nav {
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: inherit;
-  text-decoration: none;
+    font-size: 32px;
 }
 
 
-/* Hero */
+/* Main */
 
 .hero {
-  padding: 20px 0;
+    padding: 70px 0 50px;
 }
+
+
+h1,
+h2 {
+    font-weight: normal;
+    margin: 0;
+}
+
 
 h1 {
-  font-size: clamp(50px, 8vw, 90px);
-  font-weight: normal;
-  line-height: 1;
-  margin: 0 0 20px;
+    font-size: clamp(50px, 8vw, 90px);
+    line-height: 1;
 }
 
+
 h2 {
-  font-size: 42px;
-  font-weight: normal;
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+
+p {
+    margin: 25px 0;
+}
+
+
+a {
+    color: inherit;
 }
 
 
 /* Sections */
 
 section {
-  margin: 90px 0;
+    margin: 60px 0;
 }
 
 
 blockquote {
-  border-left: 3px solid #111;
-  padding-left: 25px;
-  font-style: italic;
+    border-left: 3px solid var(--text);
+    padding-left: 25px;
+    margin-left: 0;
+    font-style: italic;
 }
 
 
 /* Footer */
 
 footer {
-  border-top: 1px solid #ddd;
-  padding: 40px 0;
-  margin-top: 20px;
-  color: #555;
+    border-top: 1px solid var(--border);
+    padding: 30px 0;
+    margin-top: 50px;
+    color: var(--muted);
 }
 
 
 /* Mobile */
 
-@media(max-width:600px){
+@media (max-width: 600px) {
 
-header {
-  display:block;
-}
+    body {
+        font-size: 18px;
+    }
 
-nav {
-  margin-top:20px;
-}
+    .hero {
+        padding: 50px 0 30px;
+    }
 
-body {
-  font-size:18px;
-}
+    h2 {
+        font-size: 32px;
+    }
 
 }
 
@@ -113,34 +136,56 @@ body {
 
 </head>
 
+
 <body>
 
 
 <header class="container">
 
-<div class="logo">
-Barnaby Nerberka
-</div>
-
-
-
+    <div class="logo">
+        Barnaby Nerberka
+    </div>
 
 </header>
-<main class="container">
-<section class="hero">
-<h2>
-Correspondent, Producer & Editor<br>
-Current & Foreign Affairs<br>
-</h2>
 
-<p>
-National Union of Journalists<br>
-International Federation of Journalists<br>
-Foreign Press Association
-</p>
-<p>
-<p>
-<br>
-<a href="mailto:b@nerberka.com">b@nerberka.com</a>
+
+
+<main class="container">
+
+    <section class="hero">
+
+        <h2>
+            Correspondent, Producer &amp; Editor<br>
+            Current &amp; Foreign Affairs
+        </h2>
+
+
+        <p>
+            National Union of Journalists<br>
+            International Federation of Journalists<br>
+            Foreign Press Association
+        </p>
+
+
+        <p>
+            <a href="mailto:b@nerberka.com">
+                b@nerberka.com
+            </a>
+        </p>
+
+    </section>
+
+</main>
+
+
+
+<footer class="container">
+
+    &copy; Barnaby Nerberka
+
+</footer>
+
+
 </body>
+
 </html>
